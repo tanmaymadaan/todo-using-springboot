@@ -5,7 +5,8 @@
 
 <body>
 <form method="post">
-	Welcome ${name}! <a href="/list-todos">Click here</a> to manage your Todos!
+	 Here is the list of your Todos: 
+	 ${todos}
 </form>
 </body>
 
