@@ -4,6 +4,6 @@
 </head>
 
 <body>
-My first JSP!
+My First JSP! Welcome ${name}
 </body>
 </html>
