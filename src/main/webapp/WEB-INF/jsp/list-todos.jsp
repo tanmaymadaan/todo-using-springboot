@@ -11,13 +11,14 @@
 <body>
 	<div class="container">
 		<h1>Your Todos</h1>
-		<table class="table">
+		<table class="table table-striped">
 			<caption>Your Todos are</caption>
 			<thead>
 				<tr>
 					<th>Description</th>
 					<th>Target Date</th>
 					<th>Is it done?</th>
+					<th>Delete</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -26,12 +27,13 @@
 						<td>${todo.desc}</td>
 						<td>${todo.targetDate}</td>
 						<td>${todo.done}</td>
+						<td><a type="button">Delete</a>
 					</tr>
 				</c:forEach>
 			</tbody>
 		</table>
 
-		<a href="/add-todo">Add a Todo</a>
+		<div><a class="button" href="/add-todo">Add a Todo</a></div>
 	</div>
 </body>
 
