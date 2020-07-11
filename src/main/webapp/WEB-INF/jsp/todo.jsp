@@ -8,12 +8,15 @@
 </head>
 
 <body>
-Add Todo page for ${name}!
-	 
-<form method="post">
-	Description: <input name="desc" type="text"/>
-	<input type="submit"/>
-</form>
+	<div class="container">
+		<form method="post">
+			<fieldset class="form-group">
+				<label>Description</label>
+				<input name="desc" type="text" class="form-control"/>
+			</fieldset>
+			<button type="submit" class="btn btn-success">Add</button>
+		</form>
+	</div>
 </body>
 
 </html>
