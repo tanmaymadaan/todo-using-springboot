@@ -4,11 +4,11 @@
 </head>
 
 <body>
+Add Todo page for ${name}!
+	 
 <form method="post">
-	 Here is the list of your Todos: 
-	 ${todos}
-	 <br/>
-	 <a href="/add-todo">Add a Todo</a>
+	Description: <input name="desc" type="text"/>
+	<input type="submit"/>
 </form>
 </body>
 
