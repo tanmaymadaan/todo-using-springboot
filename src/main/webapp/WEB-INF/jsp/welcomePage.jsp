@@ -5,7 +5,7 @@
 
 <body>
 <form method="post">
-	Welcome ${name}! Your password is ${password}
+	Welcome ${name}!
 </form>
 </body>
 

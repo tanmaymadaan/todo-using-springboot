@@ -1,4 +1,4 @@
-package com.tanmaymadaan.todousingspring.web.service;
+package com.tanmaymadaan.todousingspring.service;
 
 import org.springframework.stereotype.Component;
 

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.tanmaymadaan.todousingspring.web.service.LoginService;
+import com.tanmaymadaan.todousingspring.service.LoginService;
 
 @Controller
 public class LoginController {
@@ -30,7 +30,6 @@ public class LoginController {
 			model.put("errorMessage", "Invalid Credentials");
 			return "login";
 		}
-			
 		
 		model.put("name", name);
 		model.put("password", password);
