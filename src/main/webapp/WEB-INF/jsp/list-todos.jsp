@@ -7,6 +7,8 @@
 <form method="post">
 	 Here is the list of your Todos: 
 	 ${todos}
+	 <br/>
+	 Your name is ${name}
 </form>
 </body>
 
