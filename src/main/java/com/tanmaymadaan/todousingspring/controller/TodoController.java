@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 //import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+import com.tanmaymadaan.todousingspring.model.Todo;
 //import com.tanmaymadaan.todousingspring.service.LoginService;
 import com.tanmaymadaan.todousingspring.service.TodoService;
 
@@ -30,12 +31,13 @@ public class TodoController {
 	
 	@RequestMapping(value="/add-todo", method=RequestMethod.GET)
 	public String showAddTodoPage(ModelMap model) {
+		model.addAttribute("todo", new Todo(0, (String) model.get("name"), "", new Date(), false));
 		return "todo";
 	}
 	
 	@RequestMapping(value="/add-todo", method=RequestMethod.POST)
-	public String addTodo(@RequestParam String desc, ModelMap model) {
-		service.addTodo((String) model.get("name"), desc, new Date(), false);
+	public String addTodo(Todo todo, ModelMap model) {
+		service.addTodo((String) model.get("name"), todo.getDesc(), new Date(), false);
 		return "redirect:/list-todos";
 	}
 	
