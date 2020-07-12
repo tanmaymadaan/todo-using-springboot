@@ -20,6 +20,19 @@ public class TodoService {
 		todos.add(new Todo(3, "tanmay", "Learn Hibernate", new Date(), false));
 	}
 	
+	public Todo retrieveTodo(int id) {
+		for (Todo todo: todos) {
+			if (todo.getId() == id) {
+				return todo;
+			}
+		}
+		return null;
+	}
+	
+	public void updateTodo(Todo todo) {
+		todos.remove(todo);
+		todos.add(todo);
+	}
 	public List<Todo> retrieveTodos(String user) {
 		List<Todo> filteredTodos = new ArrayList<Todo>();
 		for (Todo todo: todos) {
